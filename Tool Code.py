@@ -1,4 +1,6 @@
+import time
 from abc import ABC, abstractmethod
+
 
 class Tool(ABC):
     def __init__(self, tool_name, material, weight):
@@ -100,53 +102,80 @@ class Sandpaper(Tool):
 
     
 def main():
+    print("Opening toolbox...")
+    time.sleep(2)  # Simulate time taken to open toolbox
+    print("Toolbox opened.")
+    time.sleep(.5)
     print("~~~~~~~~~~~~~~TOOLS~~~~~~~~~~~~~~~~~")
     hammer_tool = Hammer("Hammer", "steel", 1.5, "claw type")
     print(hammer_tool.use_tool())
+    time.sleep(.5)
     print(hammer_tool.add_nail())
+    time.sleep(.5)
     print(hammer_tool.add_nail())  #drive another nail
+    time.sleep(.5)
     print(hammer_tool.clean_tool())
+    time.sleep(.5)
     print(hammer_tool.return_tool())
 
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-
+    time.sleep(1)
     chisel_tool = Chisel("Chisel", "iron", 2, "flat")
     print(chisel_tool.use_tool())
+    time.sleep(.5)
     print(chisel_tool.sharpen())
+    time.sleep(.5)
     print(chisel_tool.clean_tool())
+    time.sleep(.5)
     print(chisel_tool.return_tool())
 
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-
+    time.sleep(1)
     screwdriver_tool = Screwdriver("Screwdriver", "plastic", 0.5, "flathead")
     print(screwdriver_tool.use_tool())
+    time.sleep(.5)
     print(screwdriver_tool.change_bit("Phillips"))
+    time.sleep(.5)
     print(screwdriver_tool.clean_tool())
+    time.sleep(.5)
     print(screwdriver_tool.return_tool())
-
+    
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    time.sleep(1)
     wrench_tool = Wrench("Wrench", "aluminum", 1, "adjustable")
     print(wrench_tool.use_tool())
+    time.sleep(.5)
     print(wrench_tool.adjust("10mm"))
+    time.sleep(.5)
     print(wrench_tool.clean_tool())
+    time.sleep(.5)
     print(wrench_tool.return_tool())
     
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-
+    time.sleep(1)
     handsaw_tool = Handsaw("Handsaw", "metal", 1.2, "crosscut")
     print(handsaw_tool.use_tool())
+    time.sleep(.5)
     print(handsaw_tool.cut())
+    time.sleep(.5)
     print(handsaw_tool.clean_tool())
+    time.sleep(.5)
     print(handsaw_tool.return_tool())
 
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    time.sleep(1)
     sandpaper_tool = Sandpaper("Sandpaper", "paper", 0.1, "medium")
     print(sandpaper_tool.use_tool())
+    time.sleep(.5)
     print(sandpaper_tool.smooth())
+    time.sleep(.5)
     print(sandpaper_tool.clean_tool())
+    time.sleep(.5)
     print(sandpaper_tool.return_tool())
 
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    print("Closing toolbox...")
+    time.sleep(2)
     print("All tools have been used and returned to the toolbox.")
 
 if __name__ == "__main__":
