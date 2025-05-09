@@ -1,22 +1,21 @@
 import time
 from abc import ABC, abstractmethod
 
-
 class Tool(ABC):
     def __init__(self, tool_name, material, weight):
-        self._tool_name = tool_name
-        self._material = material
-        self._weight = weight
+        self.tool_name = tool_name
+        self.material = material
+        self.weight = weight
 
     @abstractmethod
     def use_tool(self):
         pass
     
     def clean_tool(self):
-        return f"{self._tool_name} made of {self._material} has been cleaned."
+        return f"{self.tool_name} made of {self.material} has been cleaned."
     
     def return_tool(self):
-        return f"Returning {self._tool_name} to the toolbox." 
+        return f"Returning {self.tool_name} to the toolbox." 
 
     # getter/setter for weight (para di maging negative)
     @property
@@ -33,74 +32,71 @@ class Tool(ABC):
 class Hammer(Tool):
     def __init__(self, tool_name, material, weight, hammer_type):
         super().__init__(tool_name, material, weight)
-        self._hammer_type = hammer_type
-        self._nails_driven = 0  # Optional: to track how many nails
+        self.hammer_type = hammer_type
+        self.nails_driven = 0  # Optional: to track how many nails
 
     def use_tool(self):
-        return f"Using {self._tool_name}, a {self._hammer_type} hammer weighing {self._weight}kg."
+        return f"Using {self.tool_name}, a {self.hammer_type} hammer weighing {self.weight}kg."
 
     def add_nail(self):
-        self._nails_driven += 1
-        return f"Nail driven using {self._tool_name}. Total nails: {self._nails_driven}"
+        self.nails_driven += 1
+        return f"Nail driven using {self.tool_name}. Total nails: {self.nails_driven}"
     
 class Chisel(Tool):
     def __init__(self, tool_name, material, weight, chisel_type):
         super().__init__(tool_name, material, weight)
-        self._chisel_type = chisel_type
+        self.chisel_type = chisel_type
 
     def use_tool(self):
-        return f"Using {self._tool_name}, a {self._chisel_type} chisel weighing {self._weight}kg."
+        return f"Using {self.tool_name}, a {self.chisel_type} chisel weighing {self.weight}kg."
 
     def sharpen(self):
-        return f"{self._tool_name} has been sharpened."
+        return f"{self.tool_name} has been sharpened."
     
 class Screwdriver(Tool):
     def __init__(self, tool_name, material, weight, screwdriver_type):
         super().__init__(tool_name, material, weight)
-        self._screwdriver_type = screwdriver_type
+        self.screwdriver_type = screwdriver_type
 
     def use_tool(self):
-        return f"Using {self._tool_name}, a {self._screwdriver_type} screwdriver weighing {self._weight}kg."
+        return f"Using {self.tool_name}, a {self.screwdriver_type} screwdriver weighing {self.weight}kg."
     
     def change_bit(self, new_bit):
-        return f"Changed the bit of {self._tool_name} to {new_bit}."
+        return f"Changed the bit of {self.tool_name} to {new_bit}."
     
 class Wrench(Tool):
     def __init__(self, tool_name, material, weight, wrench_type):
         super().__init__(tool_name, material, weight)
-        self._wrench_type = wrench_type
+        self.wrench_type = wrench_type
 
     def use_tool(self):
-        return f"Using {self._tool_name}, an {self._wrench_type} wrench weighing {self._weight}kg."
+        return f"Using {self.tool_name}, an {self.wrench_type} wrench weighing {self.weight}kg."
     
     def adjust(self, new_size):
-        return f"Adjusted the size of {self._tool_name} to {new_size}."
+        return f"Adjusted the size of {self.tool_name} to {new_size}."
     
 class Handsaw(Tool):
     def __init__(self, tool_name, material, weight, saw_type):
         super().__init__(tool_name, material, weight)
-        self._saw_type = saw_type
+        self.saw_type = saw_type
 
     def use_tool(self):
-        return f"Using {self._tool_name}, a {self._saw_type} saw weighing {self._weight}kg."
+        return f"Using {self.tool_name}, a {self.saw_type} saw weighing {self.weight}kg."
     
     def cut(self):
-        return f"{self._tool_name} has cut through the material."
+        return f"{self.tool_name} has cut through the material."
     
 class Sandpaper(Tool):
     def __init__(self, tool_name, material, weight, grit_size):
         super().__init__(tool_name, material, weight)
-        self._grit_size = grit_size
+        self.grit_size = grit_size
 
     def use_tool(self):
-        return f"Using {self._tool_name}, a sandpaper with grit size {self._grit_size} weighing {self._weight}kg."
+        return f"Using {self.tool_name}, a sandpaper with grit size {self.grit_size} weighing {self.weight}kg."
     
     def smooth(self):
-        return f"{self._tool_name} has smoothed the surface."
-    
-    
-
-    
+        return f"{self.tool_name} has smoothed the surface."
+  
 def main():
     print("Opening toolbox...")
     time.sleep(2)  # Simulate time taken to open toolbox
