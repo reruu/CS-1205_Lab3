@@ -172,7 +172,7 @@ def main():
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     print("All tools have been maintained and returned to the toolbox.")
     print("Closing toolbox...")
-    time.sleep(2)
+    time.sleep(1.5)
     print("Toolbox closed.")
 
 if __name__ == "__main__":
