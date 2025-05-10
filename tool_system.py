@@ -170,9 +170,10 @@ def main():
     print(sandpaper_tool.return_tool())
 
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    print("All tools have been maintained and returned to the toolbox.")
     print("Closing toolbox...")
     time.sleep(2)
-    print("All tools have been maintained and returned to the toolbox.")
+    print("Toolbox closed.")
 
 if __name__ == "__main__":
     main()
