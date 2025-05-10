@@ -1,4 +1,8 @@
+![1599844](https://github.com/user-attachments/assets/f59a1c1a-8b24-471e-a193-6f668cd5be53)
+
 # **🛠️ BOB THE BUILDER’S SIMPLE TOOL MAINTENANCE**
+
+---
 
 ##  🫂 **Team Members** 
 | Name | Username |
@@ -7,9 +11,27 @@
 | 👧🏻 ${\color{pink}Claire }$ | [isen](https://github.com/ari5en) |
 | 👦🏻 ${\color{pink}Raymond }$ | [monay](https://github.com/Monay-mamon) |
 
+---
+
 ## 📝 **SHORT DESCRIPTION OF THE SYSTEM**
 The project ${\color{pink}Bob \space the \space Builder's \space Simple \space Tool \space Maintenance }$ was designed to show how to properly define an __**abstract class**__, implement the concept of __**inheritance**__ correctly,
-and show how to __**override the abstract methods**__ properly. This project showcases these key concepts through a simple example of ${\color{pink}Tool \space Maintenance }$—opening the toolbox, performing a maintenance on every tool, then finally closing the toolbox.
+and show how to __**override the abstract methods**__ properly. 
+
+Each tool class extends `Tool` and overrides its abstract method `use_tool()`, while also introducing unique behaviors such as `add_nail()`, `sharpen()`, or `adjust()`. Through this structure, the system models how **_inheritance_**, **_method overriding_**, and **_data encapsulation_** work together in real-world software design.
+
+The program runs through a complete tool usage cycle—**opening the toolbox**, **performing maintenance actions**, and **returning the tools**—illustrating key OOP techniques in a practical and visual way!
+
+---
+
+## 🔍 **HIGHLIGHTS**
+📦 Abstract Base Class: All tools inherit from a shared abstract class, `Tool`, that defines the interface via the `use_tool()` method <br /><br />
+🧰 Diverse Tool Classes: Includes specialized tools such as `Hammer`, `Chisel`, `Screwdriver`, `Wrench,` `Handsaw`, and `Sandpaper` <br /><br />
+✅ Data Validation: Uses Python property decorators (`@property`, `@weight.setter`) to ensure valid inputs (e.g., `weight > 0`) <br /><br />
+🔁 Dynamic Polymorphism: Each tool redefines `use_tool()` for tool-specific actions and messages <br /><br />
+🔧 Realistic Methods: Custom methods like `change_bit()`, `smooth()`, `cut()`, `add_nail()` reflect real tool functions <br/><br />
+🪛 Sequential Flow: Simulates the process of maintaining each tool one by one, then returning it to the toolbox
+
+---
 
 ## 🧠 **HOW TO RUN THE PROGRAM**
 
@@ -19,6 +41,8 @@ and show how to __**override the abstract methods**__ properly. This project sho
 4. Run the program using the terminal or command prompt:
    ```bash
    python main.py
+
+---
 
 ## __📜 ACKNOWLEDGEMENT__
 Our group would like to express our sincere gratitude to everyone who supported the development of this coding project on Object-Oriented Programming using Python language.
