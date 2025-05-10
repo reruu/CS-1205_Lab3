@@ -41,13 +41,6 @@ class Hammer(Tool):
     def add_nail(self):
         self.nails_driven += 1
         return f"Nail driven using {self.tool_name}. Total nails: {self.nails_driven}"
-
-    def clean_tool(self):
-        return f"{self.tool_name} made of {self.material} has been cleaned."
-    
-    def return_tool(self):
-        return f"Returning {self.tool_name} to the toolbox." 
-
     
 class Chisel(Tool):
     def __init__(self, tool_name, material, weight, chisel_type):
@@ -59,14 +52,6 @@ class Chisel(Tool):
 
     def sharpen(self):
         return f"{self.tool_name} has been sharpened."
-
-    def clean_tool(self):
-        return f"{self.tool_name} made of {self.material} has been cleaned."
-    
-    def return_tool(self):
-        return f"Returning {self.tool_name} to the toolbox." 
-
-    
     
 class Screwdriver(Tool):
     def __init__(self, tool_name, material, weight, screwdriver_type):
@@ -78,12 +63,6 @@ class Screwdriver(Tool):
     
     def change_bit(self, new_bit):
         return f"Changed the bit of {self.tool_name} to {new_bit}."
-
-    def clean_tool(self):
-        return f"{self.tool_name} made of {self.material} has been cleaned."
-    
-    def return_tool(self):
-        return f"Returning {self.tool_name} to the toolbox." 
     
 class Wrench(Tool):
     def __init__(self, tool_name, material, weight, wrench_type):
@@ -95,12 +74,6 @@ class Wrench(Tool):
     
     def adjust(self, new_size):
         return f"Adjusted the size of {self.tool_name} to {new_size}."
-
-    def clean_tool(self):
-        return f"{self.tool_name} made of {self.material} has been cleaned."
-    
-    def return_tool(self):
-        return f"Returning {self.tool_name} to the toolbox." 
     
 class Handsaw(Tool):
     def __init__(self, tool_name, material, weight, saw_type):
@@ -112,12 +85,6 @@ class Handsaw(Tool):
     
     def cut(self):
         return f"{self.tool_name} has cut through the material."
-
-    def clean_tool(self):
-        return f"{self.tool_name} made of {self.material} has been cleaned."
-    
-    def return_tool(self):
-        return f"Returning {self.tool_name} to the toolbox." 
     
 class Sandpaper(Tool):
     def __init__(self, tool_name, material, weight, grit_size):
@@ -129,12 +96,6 @@ class Sandpaper(Tool):
     
     def smooth(self):
         return f"{self.tool_name} has smoothed the surface."
-
-    def clean_tool(self):
-        return f"{self.tool_name} made of {self.material} has been cleaned."
-    
-    def return_tool(self):
-        return f"Returning {self.tool_name} to the toolbox." 
   
 def main():
     print("Opening toolbox...")
