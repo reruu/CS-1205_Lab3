@@ -1,5 +1,4 @@
-![1599844](https://github.com/user-attachments/assets/f59a1c1a-8b24-471e-a193-6f668cd5be53)
-
+![1599844](https://github.com/user-attachments/assets/d2c89aa4-5352-4c7c-a516-ece23a8eeddb)
 # **🛠️ BOB THE BUILDER’S SIMPLE TOOL MAINTENANCE**
 
 ---
