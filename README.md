@@ -3,7 +3,7 @@
 ##  🫂 **Team Members** 
 👦🏻 ${\color{lightgreen}Jarell }$ | [reruu](https://github.com/reruu)
 
-👧🏻 ${\color{lightgreen}Claire }$ [isen](https://github.com/ari5en)
+👧🏻 ${\color{lightgreen}Claire }$ | [isen](https://github.com/ari5en)
 
 👦🏻 ${\color{lightgreen}Raymond }$ 
 
