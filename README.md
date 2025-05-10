@@ -3,13 +3,13 @@
 ##  🫂 **Team Members** 
 | Name | Username |
 |------|----------|
-| 👦🏻 ${\color{lightgreen}Jarell }$ | [reruu](https://github.com/reruu) |
-| 👧🏻 ${\color{lightgreen}Claire }$ | [isen](https://github.com/ari5en) |
-| 👦🏻 ${\color{lightgreen}Raymond }$ | [monay](https://github.com/Monay-mamon) |
+| 👦🏻 ${\color{pink}Jarell }$ | [reruu](https://github.com/reruu) |
+| 👧🏻 ${\color{pink}Claire }$ | [isen](https://github.com/ari5en) |
+| 👦🏻 ${\color{pink}Raymond }$ | [monay](https://github.com/Monay-mamon) |
 
 ## 📝 **SHORT DESCRIPTION OF THE SYSTEM**
-The project ${\color{lightgreen}Bob \space the \space Builder's \space Simple \space Tool \space Maintenance }$ was designed to show how to properly define an __**abstract class**__, implement the concept of __**inheritance**__ correctly,
-and show how to __**override the abstract methods**__ properly. This project showcases these key concepts through a simple example of ${\color{lightgreen}Tool \space Maintenance }$—opening the toolbox, performing a maintenance on every tool, then finally closing the toolbox.
+The project ${\color{pink}Bob \space the \space Builder's \space Simple \space Tool \space Maintenance }$ was designed to show how to properly define an __**abstract class**__, implement the concept of __**inheritance**__ correctly,
+and show how to __**override the abstract methods**__ properly. This project showcases these key concepts through a simple example of ${\color{pink}Tool \space Maintenance }$—opening the toolbox, performing a maintenance on every tool, then finally closing the toolbox.
 
 ## 🧠 **HOW TO RUN THE PROGRAM**
 
