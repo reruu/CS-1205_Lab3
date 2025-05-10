@@ -1,9 +1,9 @@
 # **🛠️ BOB THE BUILDER’S SIMPLE TOOL MAINTENANCE**
 
 ##  🫂 **Team Members** 
-👦🏻 ${\color{lightgreen}Jarell }$ 
+👦🏻 ${\color{lightgreen}Jarell }$ | [reruu](https://github.com/reruu)
 
-👧🏻 ${\color{lightgreen}Claire }$ 
+👧🏻 ${\color{lightgreen}Claire }$ [isen](https://github.com/ari5en)
 
 👦🏻 ${\color{lightgreen}Raymond }$ 
 
