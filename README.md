@@ -16,8 +16,9 @@ and show how to __**override the abstract methods**__ properly. This project sho
 1. Make sure you have Python installed (Python 3.6 or higher recommended).
 2. Download or copy this code's raw file.
 3. Open the file in a terminal or paste the code's raw file you copied in the terminal.
-4. Run the program using the terminal or command prompt: python main.py
-
+4. Run the program using the terminal or command prompt:
+   ```bash
+   python main.py
 
 ## __📜 ACKNOWLEDGEMENT__
 Our group would like to express our sincere gratitude to everyone who supported the development of this coding project on Object-Oriented Programming using Python language.
